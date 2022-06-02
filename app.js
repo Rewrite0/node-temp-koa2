@@ -4,9 +4,9 @@ import logger from 'koa-logger'
 import koaBody from 'koa-body'
 import cors from 'koa2-cors'
 import path from 'path'
-import router from './routes/index.js'
-import errorHandler from './middleware/errorHandler.js'
-import dataFormatting from './middleware/dataFormatting.js'
+import router from './src/routes/index.js'
+import errorHandler from './src/middleware/errorHandler.js'
+import dataFormatting from './src/middleware/dataFormatting.js'
 
 const app = new Koa();
 
