@@ -1,8 +1,8 @@
 import Router from "koa-router";
-import { hello } from '../controllers/hello.js';
+import publicRouter from './public.js'
 
 const router = new Router();
 
-router.get('/', hello)
+router.use(publicRouter.routes(), publicRouter.allowedMethods());
 
 export default router;

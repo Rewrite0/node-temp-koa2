@@ -4,6 +4,12 @@
   "main": "app.js",
   "license": "MIT",
   "type": "module",
+  "imports": {
+    "#root/*": "./*",
+    "#src/*": "./src/*",
+    "#ctr": "./src/controllers/index.js",
+    "#routes": "./src/routes/index.js"
+  },
   "scripts": {
     "dev": "nodemon app.js",
     "start": "pm2 start pm2.config.js"
